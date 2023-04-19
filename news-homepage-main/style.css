@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  padding: 0 8%;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav #openMenu {
+  display: none;
+}
+nav #closeMenu {
+  height: 30px;
+  width: 30px;
+  display: none;
+}
+nav #sideMenu li {
+  display: inline-block;
+  padding: 0 10px;
+}
+nav #sideMenu li a {
+  color: hsl(236, 13%, 42%);
+}
+nav #sideMenu li a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.img-mobile {
+  display: none;
+}
+
+.container .img-desktop {
+  width: 100%;
+}
+.container .banner {
+  display: flex;
+  justify-content: space-between;
+}
+.container .banner .subject {
+  flex-basis: 65%;
+}
+.container .banner .subject .role {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.container .banner .subject .role .title {
+  flex-basis: 45%;
+  width: 100%;
+  font-weight: 800;
+  font-size: 45px;
+}
+.container .banner .subject .role .description {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .banner .subject .role .description p {
+  margin-top: 1rem;
+  color: hsl(236, 13%, 42%);
+}
+.container .banner .subject .role .description a {
+  text-transform: uppercase;
+  background-color: hsl(5, 85%, 63%);
+  padding: 15px;
+  color: hsl(36, 100%, 99%);
+  display: block;
+  width: 40%;
+  text-align: center;
+}
+.container .banner .subject .role .description a:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+.container .banner .examples {
+  flex-basis: 33%;
+  background: hsl(240, 100%, 5%);
+  padding: 30px;
+  color: hsl(36, 100%, 99%);
+}
+.container .banner .examples h2 {
+  color: hsl(35, 77%, 62%);
+}
+.container .banner .examples p {
+  color: hsl(236, 13%, 42%);
+  padding: 10px 0 0;
+}
+.container .banner .examples h3 a {
+  color: hsl(36, 100%, 99%);
+}
+.container .banner .examples h3 a:hover {
+  color: hsl(35, 77%, 62%);
+}
+.container .banner .examples div {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+  padding: 20px 0;
+  margin: 10px 0;
+}
+.container .blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  margin-top: 50px;
+  width: 100%;
+}
+.container .blog a {
+  color: hsl(240, 100%, 5%);
+}
+.container .blog a:hover {
+  color: hsl(35, 77%, 62%);
+}
+.container .blog h2,
+.container .blog p {
+  color: hsl(236, 13%, 42%);
+}
+.container .blog .blog-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+.container .blog .blog-content .img1 {
+  width: 35%;
+}
+.container .blog .blog-content .img1 img {
+  width: 100%;
+}
+.container .blog .blog-content aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-basis: 60%;
+  width: 50%;
+}
+
+@media (width <= 992px) {
+  #readMore {
+    padding: 10px;
+    width: 150px;
+  }
+}
+@media (width <= 768px) {
+  body {
+    padding: 0 20px;
+  }
+  nav #openMenu,
+  nav #closeMenu {
+    display: block;
+    cursor: pointer;
+  }
+  nav #closeMenu {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+  }
+  nav #sideMenu {
+    height: 100vh;
+    width: 60%;
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    right: -60%;
+    padding-top: 7rem;
+    transition: right 0.5s;
+    background-color: hsl(36, 100%, 99%);
+  }
+  nav #sideMenu li {
+    display: block;
+    padding: 15px 0;
+  }
+  nav #sideMenu li a {
+    color: hsl(240, 100%, 5%);
+    font-size: 18px;
+  }
+  .img-desktop {
+    display: none;
+  }
+  .img-mobile {
+    display: block;
+    width: 100%;
+  }
+  .role {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .description p {
+    font-size: 18px;
+    padding-top: 1rem;
+    padding-bottom: 1.5em;
+  }
+  .description a {
+    padding: 20px;
+    margin-bottom: 2rem;
+  }
+}
+@media (width <= 693px) {
+  .title {
+    font-size: 20px;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .blog-content .img1 {
+    flex-basis: 60%;
+    width: 60%;
+  }
+  .blog-content .img1 img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
