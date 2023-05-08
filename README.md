@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [News Homepage](news-homepage-welcome.netlify.app)
+- Live Site URL: [News Homepage](https://news-homepage-welcome.netlify.app/)
 
 ## My process
 
